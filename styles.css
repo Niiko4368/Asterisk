@@ -67,10 +67,18 @@
 
 /* Responsive: stack columns on small screens */
 @media screen and (max-width: 600px) {
-  .column.side, .column.middle {
+  .topnav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column.side, 
+  .column.middle {
     flex: 100%;
+    max-width: 100%;
   }
 }
+
 
 /* Footer */
 .footer {
