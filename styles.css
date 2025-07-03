@@ -134,4 +134,13 @@
   cursor: zoom-out;
 }
 
+.lightbox {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.lightbox.show {
+  opacity: 1;
+  display: block;
+}
 
