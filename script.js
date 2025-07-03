@@ -18,6 +18,7 @@ galleryImages.forEach(img => {
   img.addEventListener('click', () => {
     lightbox.style.display = 'block';
     lightboxImg.src = img.src;
+    lightbox.classList.add('show');
   });
 });
 
