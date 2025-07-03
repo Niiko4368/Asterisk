@@ -16,7 +16,6 @@ const galleryImages = document.querySelectorAll('.gallery-img');
 
 galleryImages.forEach(img => {
   img.addEventListener('click', () => {
-    lightbox.style.display = 'block';
     lightboxImg.src = img.src;
     lightbox.classList.add('show');
   });
@@ -26,8 +25,9 @@ closeBtn.addEventListener('click', () => {
   lightbox.classList.remove('show');
 });
 
-img.addEventListener('click', () => {
-  lightbox.style.display = 'block';
-  setTimeout(() => lightbox.classList.add('show'), 10);
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.classList.remove('show');
+  }
 });
 
