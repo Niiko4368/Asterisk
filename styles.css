@@ -119,6 +119,11 @@
   height: 100%;
   overflow: auto;
   background-color: rgba(0,0,0,0.9);
+  cursor: zoom-out;
+}
+
+.lightbox.show {
+  display: block;
 }
 
 .lightbox-content {
@@ -128,19 +133,5 @@
   max-height: 80%;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.6);
-}
-
-.lightbox {
-  cursor: zoom-out;
-}
-
-.lightbox {
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.lightbox.show {
-  opacity: 1;
-  display: block;
 }
 
