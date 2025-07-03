@@ -26,8 +26,8 @@ closeBtn.addEventListener('click', () => {
   lightbox.classList.remove('show');
 });
 
-lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) {
-    lightbox.classList.remove('show');
-  }
+img.addEventListener('click', () => {
+  lightbox.style.display = 'block';
+  setTimeout(() => lightbox.classList.add('show'), 10);
 });
+
