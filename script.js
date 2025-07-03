@@ -22,11 +22,11 @@ galleryImages.forEach(img => {
 });
 
 closeBtn.addEventListener('click', () => {
-  lightbox.style.display = 'none';
+  lightbox.classList.remove('show');
 });
 
 lightbox.addEventListener('click', (e) => {
   if (e.target === lightbox) {
-    lightbox.style.display = 'none';
+    lightbox.classList.remove('show');
   }
 });
